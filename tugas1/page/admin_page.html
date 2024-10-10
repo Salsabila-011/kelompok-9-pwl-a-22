@@ -1,2 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page - Timnas Indonesia</title>
+  <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Sidebar -->
+  <div class="flex">
+    <div class="w-64 bg-red-600 text-white h-screen p-5">
+      <h2 class="text-3xl font-semibold mb-6">Admin Timnas</h2>
+      <nav>
+        <ul class="space-y-4">
+          <li><a href="#" class="block py-2 px-4 bg-red-700 rounded-lg hover:bg-red-800">Dashboard</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-red-700 rounded-lg">Pemain</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-red-700 rounded-lg">Jadwal Pertandingan</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-red-700 rounded-lg">Profil Tim</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-red-700 rounded-lg">Keluar</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+      <!-- Header -->
+      <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow">
+        <h1 class="text-2xl font-bold text-red-600">Dashboard Admin</h1>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700">Tambah Data</button>
+      </div>
+
+      <!-- Profil Timnas Indonesia -->
+      <div class="mt-6 bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Profil Timnas Indonesia</h2>
+        <form action="#" method="POST">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="nama-tim" class="block text-gray-700">Nama Tim:</label>
+              <input type="text" id="nama-tim" name="nama-tim" class="w-full mt-2 p-2 border border-gray-300 rounded-lg" placeholder="Timnas Indonesia">
+            </div>
+            <div>
+              <label for="pelatih" class="block text-gray-700">Nama Pelatih:</label>
+              <input type="text" id="pelatih" name="pelatih" class="w-full mt-2 p-2 border border-gray-300 rounded-lg" placeholder="Shin Tae-yong">
+            </div>
+            <div>
+              <label for="tahun-berdiri" class="block text-gray-700">Tahun Berdiri:</label>
+              <input type="number" id="tahun-berdiri" name="tahun-berdiri" class="w-full mt-2 p-2 border border-gray-300 rounded-lg" placeholder="1930">
+            </div>
+            <div>
+              <label for="peringkat-fifa" class="block text-gray-700">Peringkat FIFA:</label>
+              <input type="number" id="peringkat-fifa" name="peringkat-fifa" class="w-full mt-2 p-2 border border-gray-300 rounded-lg" placeholder="150">
+            </div>
+          </div>
+          <button type="submit" class="mt-4 bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700">Simpan Profil</button>
+        </form>
+      </div>
+
+      <!-- Data Pemain -->
+      <div class="mt-6 bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Daftar Pemain</h2>
+        <table class="w-full text-left table-auto">
+          <thead>
+            <tr class="bg-gray-200 text-gray-700">
+              <th class="px-4 py-2">Nama Pemain</th>
+              <th class="px-4 py-2">Posisi</th>
+              <th class="px-4 py-2">Nomor Punggung</th>
+              <th class="px-4 py-2">Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Evan Dimas</td>
+              <td class="border px-4 py-2">Gelandang</td>
+              <td class="border px-4 py-2">6</td>
+              <td class="border px-4 py-2">
+                <button class="bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600">Hapus</button>
+              </td>
+            </tr>
+            <!-- Tambah data pemain lain di sini -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jadwal Pertandingan -->
+      <div class="mt-6 bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Jadwal Pertandingan</h2>
+        <table class="w-full text-left table-auto">
+          <thead>
+            <tr class="bg-gray-200 text-gray-700">
+              <th class="px-4 py-2">Tanggal</th>
+              <th class="px-4 py-2">Lawan</th>
+              <th class="px-4 py-2">Lokasi</th>
+              <th class="px-4 py-2">Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">15 Januari 2024</td>
+              <td class="border px-4 py-2">Irak</td>
+              <td class="border px-4 py-2">Jakarta</td>
+              <td class="border px-4 py-2">
+                <button class="bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600">Hapus</button>
+              </td>
+            </tr>
+            <!-- Tambah data pertandingan lain di sini -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
 
 
