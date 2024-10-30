@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/output.css">
 </head>
-<body>
+<body class="bg-red-600">
+  <nav class="bg-slate-50 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="../img/logotim.png" alt="Logo Timnas Indonesia" class="w-10 h-10 mr-2">
+            <span class="text-red-700 text-xl font-bold">Tim Nasional Indonesia</span>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <a href="web_page.html" class="text-red-700 hover:bg-red-300 px-3 py-2 rounded">Beranda</a>
+            <a href="#" class="text-red-700 hover:bg-red-300 px-3 py-2 rounded">Profil</a>
+            <a href="#" class="text-red-700 hover:bg-red-300 px-3 py-2 rounded">Prestasi</a>
+            <a href="admin_page.html" class="text-red-700 hover:bg-red-300 px-3 py-2 rounded">Admin</a>
+            <a href="login_page.html" class="text-red-700 hover:bg-red-300 px-3 py-2 rounded">Keluar</a>
+            
+        </div>
+        
+    </div>
+</nav>
+
     
+    <header class="bg-cover bg-center h-64" style="background-image: url('../img/bg.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h1 class="text-white text-3xl font-bold">Selamat Datang di Tim Nasional Indonesia</h1>
+        </div>
+    </header>
+    
+
+    <div class="max-w-4xl mx-auto mt-10 bg-white rounded-lg shadow-md p-5">
+        
+        <div class="bg-slate-100 p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 max-w-md mx-auto">
+            <img src="../img/logo.png" alt="Logo Timnas Indonesia" class="w-32 h-32 mx-auto mb-4">
+            <h2 class="text-2xl font-semibold text-center text-red-600 mb-2">Timnas Indonesia</h2>
+            <p class="text-center text-gray-700">Logo Timnas Indonesia mencerminkan semangat Garuda dan kebanggaan bangsa di kancah sepak bola.</p>
+          </div>
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold">Sejarah</h2>
+            <p class="mt-2 text-gray-700">Tim nasional sepak bola Indonesia didirikan pada tahun 1933 dan merupakan anggota penuh FIFA sejak 1950. Tim ini memiliki sejarah yang kaya, dengan berbagai prestasi di tingkat regional.</p>
+        </div>
+
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold">Prestasi</h2>
+            <ul class="mt-2 list-disc list-inside text-gray-700">
+                <li>Piala AFF: Juara (1991, 1997, 1999)</li>
+                <li>Piala Asia: 4 Besar (1956, 1960)</li>
+                <li>Medali Perak Asian Games: (1962)</li>
+            </ul>
+        </div>
+
+        <div class="max-w-7xl mx-auto py-10 px-6">
+            <h1 class="text-4xl font-bold text-center text-red-600 mb-8">Jadwal Timnas Indonesia 2024</h1>
+        
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+              <!-- Piala Asia 2024 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Piala Asia 2023</h2>
+                <ul class="list-disc list-inside space-y-2">
+                  <li><strong>15 Januari 2024</strong>: Indonesia vs Irak</li>
+                  <li><strong>19 Januari 2024</strong>: Indonesia vs Vietnam</li>
+                  <li><strong>24 Januari 2024</strong>: Indonesia vs Jepang</li>
+                </ul>
+              </div>
+        
+              <!-- Kualifikasi Piala Dunia 2026 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Kualifikasi Piala Dunia 2026</h2>
+                <ul class="list-disc list-inside space-y-2">
+                  <li><strong>21 Maret 2024</strong>: Matchday 1</li>
+                  <li><strong>26 Maret 2024</strong>: Matchday 2</li>
+                  <li><strong>6 Juni 2024</strong>: Matchday 3</li>
+                  <li><strong>11 Juni 2024</strong>: Matchday 4</li>
+                </ul>
+              </div>
+        
+              <!-- Piala AFF 2024 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Piala AFF 2024</h2>
+                <p>Turnamen dimulai pada Desember 2024.</p>
+              </div>
+        
+              <!-- Piala Asia U-23 2024 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Piala Asia U-23 2024</h2>
+                <p>15-21 April 2024</p>
+              </div>
+        
+              <!-- Piala AFF U-19 2024 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Piala AFF U-19 2024</h2>
+                <p>Tanggal belum ditentukan.</p>
+              </div>
+        
+              <!-- Kualifikasi Piala Asia U-20 2025 -->
+              <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-300 hover:shadow-xl transform hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-semibold text-red-600 mb-4">Kualifikasi Piala Asia U-20 2025</h2>
+                <p>21-29 September 2024</p>
+              </div>
+        
+            </div>
+          </div>
+
 </body>
 </html>
